@@ -1,9 +1,11 @@
 import 'funciones/calculadora.dart' as calc;
+import 'funciones/asincronia.dart' as asincronia;
+import 'funciones/streams.dart' as stream;
 import 'dart:io';
 
 void main() {
-  List<String> nombreFunciones = ['Calculadora'];
-  List<void Function()> funciones = [calc.calcular];
+  List<String> nombreFunciones = ['Calculadora', 'Asincronia', 'Stream'];
+  List<void Function()> funciones = [calc.calcular, asincronia.futureAsync, stream.socket];
   String seguir = 'y';
   //Definicio de variables
 
